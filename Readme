@@ -1,3 +1,17 @@
 The code for dkg and bit decomposation is in dkg.py. You should run them inside HoneybadgerMPC.
 
 The code for 2PC is in 2pc.mpc and you should run it in the latest version SCALE-MAMBA with a full threshold secret sharing. 
+
+Experiments using HoneybadgerMPC:
+
+1. Download and install HoneybadgerMPC from github link: https://github.com/initc3/HoneyBadgerMPC
+2. Put dkg.py into the apps folder, build the docker image through 'docker-compose build'.
+3. For local tests, please refer to Readme in the following link (and replace the test code name to be dkg.py): https://github.com/initc3/HoneyBadgerMPC/tree/dev/apps/tutorial
+4. For tests on aws clusters, please refer to Readme in the following link: https://github.com/initc3/HoneyBadgerMPC/tree/dev/aws
+
+Experiments for 2PC:
+
+1. Download and install latest version SCALE-MAMBA from github link: https://github.com/KULeuven-COSIC/SCALE-MAMBA, this step should be done in both machines.
+2. Use Setup.x to build up proper config files, please choose full threshold secret sharing in step 2.
+3. Put 2pc.mpc in Programs/2pc and compile it with "./compile.sh Programs/2pc"
+4. run the test with './Player.x 0 Programs/2pc', where 0 is the id of the party.
