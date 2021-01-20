@@ -1,0 +1,3 @@
+The code for dkg and bit decomposation is in dkg.py. You should run them inside HoneybadgerMPC.
+
+The code for 2PC is in 2pc.mpc and you should run it in the latest version SCALE-MAMBA with a full threshold secret sharing. 

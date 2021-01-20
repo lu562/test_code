@@ -1,0 +1,15 @@
+import time
+
+# random input, please change them in multiple tests.
+m_0 = sint(456789098765)
+m_1 = sint(478476576767)
+b = sint(1)
+
+# # this line is to let all machines in sync
+c = b * b
+
+start_timer(1)
+res = m_0 + (m_1 - m_0) * b
+stop_timer(1)
+res_open = res.reveal()
+print_ln("result: %s", res_open)
